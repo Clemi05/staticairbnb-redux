@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   render() {
+    const src = "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg";
+    const { name, description, price, priceCurrency } = this.props.flat;
     return (
       <div class="card">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <img src={src} />
         <div class="card-infos">
           <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
+            <h2>{name}</h2>
+            <p>{description}</p>
           </div>
-          <h2 class="card-pricing">£99.99</h2>
-          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-user avatar-bordered" />
+          <h2 class="card-pricing">{price} {priceCurrency}</h2>
         </div>
       </div>
-
     );
   }
 }
