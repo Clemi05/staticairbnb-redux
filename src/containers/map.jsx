@@ -5,6 +5,7 @@ class Map extends Component {
     const style = {
       height: "100vh"
     };
+
     return (
       <div className="col-sm-5" style={style}>
         TODO
