@@ -2,31 +2,37 @@
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  h2 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 12px;
+    opacity: .7;
+    margin: 0;
+  }
+
+  .card-infos {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 1em;
+
+    .card-pricing {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
 }
 
 .card>img {
   height: 200px;
   width: 100%;
   object-fit: cover;
-}
-
-.card h2 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.card p {
-  font-size: 12px;
-  opacity: .7;
-  margin: 0;
-}
-
-
-.card .card-infos {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: relative;
+  border-radius: 10px;
 }

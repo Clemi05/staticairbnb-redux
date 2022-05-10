@@ -2,17 +2,16 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   render() {
-    const src = "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg";
-    const { name, description, price, priceCurrency } = this.props.flat;
+    const { name, description, imageUrl, price, priceCurrency } = this.props.flat;
     return (
-      <div class="card">
-        <img src={src} />
-        <div class="card-infos">
+      <div className="flat card">
+        <img src={imageUrl} />
+        <div className="card-infos">
           <div>
             <h2>{name}</h2>
             <p>{description}</p>
           </div>
-          <h2 class="card-pricing">{price} {priceCurrency}</h2>
+          <h2 className="card-pricing">{price}{priceCurrency}</h2>
         </div>
       </div>
     );

@@ -7,12 +7,18 @@ body {
 
 #root {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .flat-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.flat {
+  flex: 50% 0 0;
+  cursor: pointer;
+  border: 6px solid transparent;
 }
