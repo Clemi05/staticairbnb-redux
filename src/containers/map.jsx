@@ -8,7 +8,7 @@ class Map extends Component {
 
     return (
       <div className="col-sm-5" style={style}>
-        TODO
+        {/* Add map */}
       </div>
     );
   }
