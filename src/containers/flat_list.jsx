@@ -11,6 +11,11 @@ class FlatList extends Component {
       "priceCurrency": "€"
     }]
   }
+
+  componentWillMount() {
+    // TODO: dispatch an action to update the Redux State tree ()
+  }
+
   render() {
     return (
       <div className="flat-list col-sm-7">
